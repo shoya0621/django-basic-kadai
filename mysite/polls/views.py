@@ -5,7 +5,7 @@ from django.template import loader
 from django.http import Http404
 
 
-# Create your views here.
+# Create your views heres.
 
 def index(request):
   latest_question_list = Question.objects.order_by("-pub_date")[:5]
